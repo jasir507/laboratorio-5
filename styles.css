@@ -1,0 +1,106 @@
+/* Creado por [Jasir De León] - 30/09/2025 */
+
+/* ============= Parte 1: Selector de Etiqueta e ID ============= */
+body {
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#encabezado-principal {
+    text-align: center;
+    color: #ec1d1d;
+    font-size: 40px;
+}
+
+/* ============= Parte 2: El Modelo de Caja (Box Model) ============= */
+.tarjeta-destino {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fff;
+    position: relative; /* para el posicionamiento absoluto interno */
+}
+
+/* ============= Parte 3: Tipografía y Selectores Avanzados ============= */
+.destacado {
+    font-weight: bold;
+    background-color: yellow;
+}
+
+/* enlaces de navegación */
+.menu-navegacion a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.menu-navegacion a:hover {
+    color: #e60073;
+}
+
+/* ============= Parte 4: Posicionamiento y Layout ============= */
+/* Imagen dentro de tarjeta */
+.tarjeta-destino img {
+    float: left;
+    margin-right: 5px;
+    border-radius: 8px;
+}
+
+/* Etiqueta NUEVO */
+.etiqueta-nuevo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4081;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* Menú fijo en la parte superior */
+.menu-navegacion {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0066cc;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+/* ============= Parte 5: Diseño Adaptable (Responsive) ============= */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .tarjeta-destino {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    #encabezado-principal {
+        font-size: 28px;
+    }
+
+    .menu-navegacion {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .menu-navegacion a {
+        margin: 5px 0;
+    }
+}
